@@ -63,6 +63,7 @@ nav > a:hover{
 body{
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
+    text-align: justify;
 }
 
 main{
