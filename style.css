@@ -9,7 +9,7 @@
     --cor1:#c5ebd5;
     --cor2:#83e1ad;
     --cor3:#3ddc84;
-    --cor4:2fa866;
+    --cor4:#2fa866;
     --cor5:#1a5c37;
     --cor6:#063d1e;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -46,10 +46,12 @@ header > p{
 }
 nav{
     background-color: var(--cor6);
+    padding:10px;
+    
 }
 
 nav > a{
-    
+    padding: 10px;
     color:white;
     text-decoration: none;
 
@@ -61,9 +63,39 @@ nav > a:hover{
 
 }
 body{
-    background-color: var(--cor1);
+   
     font-family: var(--fonte-padrao);
+    
+}
+
+a.externo::after {
+    content:'\00a0\1f517';
+}
+
+main p{
+    margin:15px 0px 15px 0px;
     text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    }
+
+main strong{
+    color:var(--cor4);
+    font-weight: bold;
+    
+}
+
+main a {
+    background-color: var(--cor5);
+    padding: 2px 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color:var(--cor4);
 }
 
 main{
@@ -76,23 +108,28 @@ main{
     margin-bottom: 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    }
+}
+
 main img{
         width: 100%;
         display:block;
         margin:auto;
     }
+
 main img.imagem {
-    width: 50%;
+    width: 350px;
 }
 
 main > h2{
-    color:var(--cor5);
+    color:var(--cor4);
     font-family: var(--fonte-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    padding: 6px;
 }
 
 div.video{
-    background-color: ;
+    background-color: var(--cor4);
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 59%;
@@ -105,6 +142,28 @@ div.video > iframe{
     left:5%;
     width: 90%;
     height:90%;
+
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.377);
+}
+aside > h3{
+    background-color: var(--cor4);
+    color:white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+aside > ul{
+    list-style-position: inside;
+    columns:2;
+    list-style-type: '\2714\00a0\00a0';
 
 }
 
