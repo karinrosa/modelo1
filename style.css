@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src:url('./fontes/idroid.otf');
+}
+
+:root{
+    --cor1:#c5ebd5;
+    --cor2:#83e1ad;
+    --cor3:#3ddc84;
+    --cor4:2fa866;
+    --cor5:#1a5c37;
+    --cor6:#063d1e;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor3),var(--cor5));
+    color:white;
+    min-height: 150px;
+    padding-top:40px;
+    }
+header > h1{
+    font-family:var(--fonte-destaque);
+    margin-bottom: 30px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    max-width: 500px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
+
+}
+nav{
+    background-color: var(--cor6);
+}
+
+nav > a{
+    
+    color:white;
+    text-decoration: none;
+
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color:var(--cor6);
+
+}
+body{
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+
+main{
+    padding: 20px;
+    display:block;
+    margin: auto;
+    min-width:300px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+main img{
+        width: 100%;
+        display:block;
+        margin:auto;
+    }
+main img.imagem {
+    width: 50%;
+}
+
+main > h2{
+    color:var(--cor5);
+    font-family: var(--fonte-android);
+}
+
+div.video{
+    background-color: ;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position:absolute;
+    top:5%;
+    left:5%;
+    width: 90%;
+    height:90%;
+
+}
+
+footer{
+    background-color: var(--cor5);
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: white;
+
+}
